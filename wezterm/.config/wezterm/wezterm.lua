@@ -17,6 +17,8 @@ return {
 		{ key = "0", mods = "CMD", action = wezterm.action.ResetFontSize },
 		{ key = "-", mods = "CMD", action = wezterm.action.DecreaseFontSize },
 		{ key = "+", mods = "CMD", action = wezterm.action.IncreaseFontSize },
+		{ key = "c", mods = "CMD", action = wezterm.action.CopyTo "Clipboard" },
+		{ key = "v", mods = "CMD", action = wezterm.action.PasteFrom "Clipboard" },
 	},
 	color_scheme = "Decaf (base16)",
 	font = wezterm.font("JetBrainsMono Nerd Font", {
