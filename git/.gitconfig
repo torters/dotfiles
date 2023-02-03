@@ -1,9 +1,6 @@
 [user]
-    name = 0xYYY
-    email = 0xYYY@pm.me
-
-[credential "https://github.com"]
-    helper = !/opt/homebrew/bin/gh auth git-credential
+    name = db0x0db
+    email = db0x0db@proton.me
 
 [core]
     excludesfile = ~/.gitignore_global
@@ -17,10 +14,9 @@
 
 [delta]
     features = decorations navigate
+    side-by-side = true
     line-numbers = true
-    side-whitespace = true
     whitespace-error-style = 22 reverse
-    syntax-theme = Solarized (dark)
 
 [delta "decorations"]
     file-style = bold yellow ul
