@@ -19,6 +19,7 @@ return {
 		{ key = "+", mods = "CMD", action = wezterm.action.IncreaseFontSize },
 		{ key = "c", mods = "CMD", action = wezterm.action.CopyTo "Clipboard" },
 		{ key = "v", mods = "CMD", action = wezterm.action.PasteFrom "Clipboard" },
+		{ key = "f", mods = "CMD", action = wezterm.action.Search { CaseSensitiveString="" } },
 	},
 	color_scheme = "Decaf (base16)",
 	font = wezterm.font("JetBrainsMono Nerd Font", {

@@ -82,10 +82,12 @@ Install Python via asdf
 ```bash
 asdf plugin-add python
 asdf install python latest
+asdf global python latest
 ```
 
 Install NodeJS via asdf
 ```bash
+asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf install nodejs latest
 asdf global nodejs latest
 ```
@@ -96,4 +98,20 @@ git clone https://github.com/syndbg/goenv.git ~/.goenv
 latest=$(goenv install -l | rg -v '(beta|rc)' | tail -1 | tr -d ' ')
 goenv install $latest && goenv global $latest
 unset latest
+```
+
+Install Solidity via [solc-select](https://github.com/crytic/solc-select)
+```bash
+pip install solc-select
+latest=$(solc-select install | tail -1)
+solc-select install $latest
+solc-select use $latest
+unset latest
+```
+
+Install [Foundry](https://github.com/foundry-rs/foundry)
+```bash
+brew install libusb # dependency
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
 ```
