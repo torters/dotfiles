@@ -13,7 +13,7 @@ xcode-select --install
 
 Install CLI tools via brew
 ```bash
-brew install asciinema direnv glow ipython jq yq
+brew install asciinema direnv neovim glow ipython jq yq
 ```
 
 Install fzf
