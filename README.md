@@ -13,7 +13,7 @@ xcode-select --install
 
 Install CLI tools via brew
 ```bash
-brew install asciinema direnv neovim glow ipython jq yq
+brew install asciinema direnv neovim glow jq yq
 ```
 
 Install fzf
@@ -29,7 +29,7 @@ Install `stow` and create soft link for dotfiles
 brew install stow
 
 cd dotfiles # cd to this repository
-stow $(ls -d */ | grep -v 'images\|cargo')
+stow $(ls -d */ | grep -v 'images\|cargo') -t $HOME
 ```
 
 Install [WezTerm](https://wezfurlong.org/wezterm/) and fonts
@@ -60,9 +60,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 Install Rust, toolchain, [sccache](https://github.com/mozilla/sccache) and [cargo-binstall](https://github.com/cargo-bins/cargo-binstall)
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | bash -s -- --verbose -y --no-modify-path
+rustup component add rust-src
+rustup toolchain install nightly
+cargo install sccache cargo-binstall
 
 cd dotfiles # cd to this repository
-stow cargo
+stow cargo -t $HOME
 ```
 
 Install CLI tools via cargo
@@ -78,11 +81,13 @@ brew install coreutils # dependency
 brew install asdf
 ```
 
-Install Python via asdf
+Install Python via asdf and IPython
 ```bash
 asdf plugin-add python
 asdf install python latest
 asdf global python latest
+
+pip install ipython
 ```
 
 Install NodeJS via asdf
