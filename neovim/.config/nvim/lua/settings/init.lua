@@ -35,3 +35,4 @@ opt.scrolloff = 8
 opt.cmdheight = 2
 opt.bufhidden = "unload"
 opt.hidden = true
+opt.clipboard = "unnamed"
