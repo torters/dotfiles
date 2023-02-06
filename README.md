@@ -97,14 +97,6 @@ asdf install nodejs latest
 asdf global nodejs latest
 ```
 
-Install Go via [goenv](https://github.com/syndbg/goenv)
-```bash
-git clone https://github.com/syndbg/goenv.git ~/.goenv
-latest=$(goenv install -l | rg -v '(beta|rc)' | tail -1 | tr -d ' ')
-goenv install $latest && goenv global $latest
-unset latest
-```
-
 Install Solidity via [solc-select](https://github.com/crytic/solc-select)
 ```bash
 pip install solc-select
