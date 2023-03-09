@@ -32,6 +32,8 @@ alias gl="git pull"
 alias ggl="git pull origin `git_current_branch`"
 alias ggp="git push origin `git_current_branch`"
 alias glg="git log --stat"
+alias ytmp3="yt-dlp -f 'ba' -x --audio-format mp3 -o '%(title)s.%(ext)s'"
+alias ytmp4="yt-dlp -f mp4 -o '%(title)s.%(ext)s'"
 
 # direnv
 eval "$(direnv hook zsh)"
