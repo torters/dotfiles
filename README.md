@@ -81,13 +81,14 @@ brew install coreutils # dependency
 brew install asdf
 ```
 
-Install Python via asdf and IPython
+Install Python via asdf and IPython, pre-commit, ruff, black, Poetry
 ```bash
 asdf plugin-add python
 asdf install python latest
 asdf global python latest
 
-pip install ipython
+pip install ipython pre-commit ruff black
+curl -sSL https://install.python-poetry.org | python3 -
 ```
 
 Install NodeJS via asdf
