@@ -36,8 +36,7 @@ stow $(ls -d */ | grep -v 'images\|cargo') -t $HOME
 ### WezTerm
 Install [WezTerm](https://wezfurlong.org/wezterm/) and fonts
 ```bash
-brew tap wez/wezterm
-brew install --cask wez/wezterm/wezterm
+brew install --cask wezterm
 
 brew tap homebrew/cask-fonts
 brew install font-jetbrains-mono-nerd-font font-codicon
@@ -45,12 +44,16 @@ brew install font-jetbrains-mono-nerd-font font-codicon
 
 ### Raycast
 Install [Raycast](https://www.raycast.com/) and configure extension settings
+```bash
+brew install --cask raycast
+```
 
 ![](images/raycast-extension-setting.png)
 
 ### `Oh My Zsh`
 Install `Oh My Zsh` and plugins
 ```bash
+# rmb to choose NOT to update/overwrite .zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # zsh-completions
