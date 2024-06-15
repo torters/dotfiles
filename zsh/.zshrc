@@ -21,7 +21,6 @@ export EDITOR=nvim
 
 # alias
 alias v="nvim"
-alias rip="rip --graveyard ~/.local/share/graveyard"
 alias ipy="ipython"
 alias gaa="git add --all"
 alias gc="git commit --verbose"

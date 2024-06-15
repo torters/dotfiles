@@ -80,7 +80,7 @@ stow cargo -t $HOME
 Install CLI tools via cargo
 ```bash
 cargo binstall bottom choose dua-cli fd-find git-delta gitui hexyl \
-    huniq hyperfine jless just ouch pueue ripgrep rm-improved sd \
+    huniq hyperfine jless just ouch pueue ripgrep sd \
     tuc xh zoxide
 ```
 
